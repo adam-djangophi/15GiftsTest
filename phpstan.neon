@@ -1,0 +1,19 @@
+includes:
+    - ./vendor/phpstan/phpstan/conf/bleedingEdge.neon
+parameters:
+    phpVersion: 80104 # PHP 8.1.4
+    checkGenericClassInNonGenericObjectType: false
+    paths:
+        - app
+        - tests
+    level: 8
+    inferPrivatePropertyTypeFromConstructor: true
+    checkMissingIterableValueType: false
+    excludePaths:
+        - %currentWorkingDirectory%/app/Providers/*
+        - %currentWorkingDirectory%/app/Http/Middleware*
+    ignoreErrors:
+        - '#value type specified in iterable type array#'
+        - '#Cannot cast array\|bool\|string\|null to string#'
+
+
