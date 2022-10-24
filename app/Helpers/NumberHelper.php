@@ -13,4 +13,10 @@ class NumberHelper
     {
         return str_replace(',', '', trim($string));
     }
+
+
+      public static function blah($string)
+        {
+            return str_replace(',', '', trim($string));
+        }
 }
