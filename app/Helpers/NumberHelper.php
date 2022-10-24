@@ -18,4 +18,10 @@ class NumberHelper
     {
         return $x;
     }
+
+
+    public static function testMe2($x)
+    {
+        return $x;
+    }
 }
