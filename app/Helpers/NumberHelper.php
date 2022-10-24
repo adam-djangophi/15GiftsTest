@@ -13,4 +13,9 @@ class NumberHelper
     {
         return str_replace(',', '', trim($string));
     }
+
+    public static function testMe($x)
+    {
+        return $x;
+    }
 }
